@@ -4,7 +4,8 @@
   "info": {
     "singularName": "wallpaper",
     "pluralName": "wallpapers",
-    "displayName": "wallpaper"
+    "displayName": "Wallpaper",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,9 +15,27 @@
     "name": {
       "type": "string"
     },
+    "description": {
+      "type": "richtext"
+    },
     "active": {
       "type": "boolean",
-      "default": true,
+      "default": true
+    },
+    "wallpaperid": {
+      "type": "uid"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "FOURK",
+        "HD",
+        "FHD"
+      ],
+      "required": true
+    },
+    "url": {
+      "type": "string",
       "required": true
     }
   }
