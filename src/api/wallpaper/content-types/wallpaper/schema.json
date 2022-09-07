@@ -47,6 +47,10 @@
       "type": "integer",
       "required": false,
       "default": 0
+    },
+    "trending": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
