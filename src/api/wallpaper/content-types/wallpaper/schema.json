@@ -37,6 +37,11 @@
     "url": {
       "type": "string",
       "required": true
+    },
+    "addedBy": {
+      "type": "string",
+      "default": "RBFX",
+      "required": true
     }
   }
 }
