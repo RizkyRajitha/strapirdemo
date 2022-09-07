@@ -42,6 +42,11 @@
       "type": "string",
       "default": "RBFX",
       "required": true
+    },
+    "downloads": {
+      "type": "integer",
+      "required": false,
+      "default": 0
     }
   }
 }
