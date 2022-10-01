@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * wallpaper service
+ * post service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::wallpaper.wallpaper');
+module.exports = createCoreService('api::post.post');

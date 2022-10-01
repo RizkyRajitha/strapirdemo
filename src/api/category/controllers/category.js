@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * wallpaper controller
+ * category controller
  */
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::wallpaper.wallpaper');
+module.exports = createCoreController('api::category.category');
