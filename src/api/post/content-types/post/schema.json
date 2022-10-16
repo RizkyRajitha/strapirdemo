@@ -16,12 +16,6 @@
       "type": "string",
       "required": true
     },
-    "categories": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::category.category",
-      "mappedBy": "post"
-    },
     "views": {
       "type": "integer",
       "default": 0
@@ -29,7 +23,7 @@
     "creator": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "admin::user"
+      "target": "plugin::users-permissions.user"
     },
     "publish": {
       "type": "boolean",
@@ -48,6 +42,23 @@
     },
     "overview": {
       "type": "richtext"
+    },
+    "coverArt": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "posts"
     }
   }
 }
