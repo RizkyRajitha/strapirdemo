@@ -59,6 +59,10 @@
       "relation": "manyToMany",
       "target": "api::category.category",
       "inversedBy": "posts"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }
